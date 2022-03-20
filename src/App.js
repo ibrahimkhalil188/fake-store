@@ -1,16 +1,13 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menu from './Components/Menubar/Menu';
+import Product from './Components/Products/Product';
 
 function App() {
   return (
     <div className="App">
       <Menu></Menu>
-      <h1>Hello world
-        fetch('https://fakestoreapi.com/products')
-            .then(res=>res.json())
-            .then(json=>console.log(json))
-      </h1>
+      <Product></Product>
     </div>
   );
 }
