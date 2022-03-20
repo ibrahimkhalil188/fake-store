@@ -1,16 +1,16 @@
 import React from 'react';
-
+import './Menu.css'
 const Menu = () => {
     return (
         <div>
-            <div className="row">
-                <div className="col-4">Logo</div>
-                <div className="col-8">
+            <div className="row menubar">
+                <div className="col-4 logo">Lo<span>Go</span></div>
+                <div className="col-8 menu">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Cart</a></li>
+                        <li>Home</li>
+                        <li>Contact</li>
+                        <li>About</li>
+                        <li>Cart</li>
                     </ul>
                 </div>
             </div>
