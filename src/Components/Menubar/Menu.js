@@ -1,8 +1,8 @@
 import React from 'react';
 import './Menu.css'
-const Menu = () => {
+const Menu = (props) => {
     return (
-        <div>
+        <div className='mb-5'>
             <div className="row menubar">
                 <div className="col-4 logo">Lo<span>Go</span></div>
                 <div className="col-8 menu">
@@ -10,7 +10,7 @@ const Menu = () => {
                         <li>Home</li>
                         <li>Contact</li>
                         <li>About</li>
-                        <li>Cart</li>
+                        <li>Cart <sup>{props.count}</sup></li>
                     </ul>
                 </div>
             </div>
